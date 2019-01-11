@@ -2,4 +2,22 @@
   box-sizing: border-box; }
 
 body {
-  background: yellow; }
+  background-color: #4A4A4A;
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+  body .container {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+
+nav {
+  width: 100vw;
+  background-color: #00A1D1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem; }
+  nav li {
+    display: none; }
