@@ -26,15 +26,83 @@
     </header>
 
     <main>
-      
+      <div class="banner">
+        <img src="images/slider-image-1024x250.png" class="slider">
+        <h1>Moj najlišši <br> naslov ikad</h1>
+        <img src="images/slider-image-1024x250.png" class="slider">
+        <img src="images/slider-image-1024x250.png" class="slider">
+        <div class="previous" data-previous-cursor="images/left.png"></div>
+        <div class="next" data-next-cursor="images/right.png"></div>
+        <div class="links">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a class="selected_dot" href="#"></a>
+        </div>
+      </div>
+
+      <div class="articles">
+        <div class="article">
+          <img src="images/content-image.png" alt="Article image">
+          <h2>Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
+          <p>Roboto Regular, 22px, Spacing 34px - Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <div class="view_full">
+            <span><a href="#">View full article</a></span>
+          </div>
+        </div>
+        <div class="article">
+          <img src="images/content-image.png" alt="Article image">
+          <h2>Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
+          <p>Roboto Regular, 22px, Spacing 34px - Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <div class="view_full">
+            <span><a href="#">View full article</a></span>
+          </div>
+        </div>
+        <div class="article">
+          <img src="images/content-image.png" alt="Article image">
+          <h2>Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
+          <p>Roboto Regular, 22px, Spacing 34px - Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <div class="view_full">
+            <span><a href="#">View full article</a></span>
+          </div>
+          <div class="load_more">
+            <h5>Load more</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact_form">
+        <h2>Contact Form</h2>
+        <form action="" method="POST">
+          <div class="contact_name">
+            <p>Contact name:</p>
+            <input type="text" name="contact_name" required><br>
+          </div>
+          <div class="email_address">
+            <p>Email address:</p>
+            <input type="email" name="email_address" required><br>
+          </div>
+          <div class="message">
+            <p>Message</p>
+            <textarea required></textarea>
+          </div>
+          <div id="submit" class="button"><button name="submit" type="submit" value="Send">Send message</button></div>
+        </form>
+      </div>
+
     </main>
-
     <footer>
-
+      <p>2016 Locastic Teest Page</p>
+      <p>By Frontend Developer</p>
     </footer>
 
   </div>
- 
+
+
+  <script src="js/slider.js"></script>
+
 </body>
 
 </html>
