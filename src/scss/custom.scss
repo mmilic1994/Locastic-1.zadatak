@@ -409,9 +409,6 @@ h1 {
 
 }
 
-.article .hidden {
-  visibility: hidden;
-}
 
 .article {
   width: 100%;
@@ -593,13 +590,15 @@ h1 {
 
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+
   .tablet {
     display: flex;
   }
 
   
 }  
-.article {
+ .article {
   width: calc(50% - 1rem);
 
   img {

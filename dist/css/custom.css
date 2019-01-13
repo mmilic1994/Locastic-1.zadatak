@@ -283,9 +283,6 @@ h1 {
 .articles {
   padding-bottom: 1rem; }
 
-.article .hidden {
-  visibility: hidden; }
-
 .article {
   width: 100%;
   padding: 1rem;
@@ -417,7 +414,8 @@ footer {
     bottom: 25%; }
   .articles {
     display: flex;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    justify-content: center; }
     .articles .tablet {
       display: flex; }
   .article {
