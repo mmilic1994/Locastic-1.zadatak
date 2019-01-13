@@ -20,19 +20,67 @@ body {
 
 nav {
   width: 100vw;
+  height: 75px;
   background-color: $primary-color;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
- 
+
 
   li {
     display: none;
   }
 
+  .hamburger, .close_icon {
+    cursor: pointer;
+  }
+
 }
+
+  .dropdown {
+    height: calc(100vh - 75px);
+    overflow: hidden; 
+    background-color: $secondary-color;
+    padding: 3rem;
+    padding-bottom: 6rem;
+    
+  }
+
+  .navlist {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    transition: 1s;
+    
+
+    .drop-item, .drop-item-small {
+      width: 100%;
+      flex-flow: row nowrap;
+      align-items: flex-end;
+      justify-content: flex-end;
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 30px;
+      
+    }
+
+    .drop-item:hover, .drop-item-small:hover {
+      color: #BFBFBF;
+      transform: scale(1.5);
+    }
+
+    .drop-item-small {
+      font-size: 18px;
+      span {
+        color: $primary-color;
+      }
+    }
+  }
 
 .banner {
   width: 100%;

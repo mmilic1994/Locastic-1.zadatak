@@ -10,6 +10,7 @@ body {
 
 nav {
   width: 100vw;
+  height: 75px;
   background-color: #00A1D1;
   display: flex;
   flex-flow: row nowrap;
@@ -18,6 +19,39 @@ nav {
   padding: 1.5rem; }
   nav li {
     display: none; }
+  nav .hamburger, nav .close_icon {
+    cursor: pointer; }
+
+.dropdown {
+  height: calc(100vh - 75px);
+  overflow: hidden;
+  background-color: #4A4A4A;
+  padding: 3rem;
+  padding-bottom: 6rem; }
+
+.navlist {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  transition: 1s; }
+  .navlist .drop-item, .navlist .drop-item-small {
+    width: 100%;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px; }
+  .navlist .drop-item:hover, .navlist .drop-item-small:hover {
+    color: #BFBFBF;
+    transform: scale(1.5); }
+  .navlist .drop-item-small {
+    font-size: 18px; }
+    .navlist .drop-item-small span {
+      color: #00A1D1; }
 
 .banner {
   width: 100%;
