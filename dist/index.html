@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Loacastic</title>
   <link rel="stylesheet" href="../dist/css/custom.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
 </head>
@@ -40,8 +40,8 @@
 
     <main>
       <div class="banner">
-        <img src="images/slider-image-1024x250.png" class="slider">
-        <h1>Moj najlišši <br> naslov ikad</h1>
+        <img src="images/slider-image-1024x250.png" class="slider"> 
+        <h1>Moj najlišši <span class="title">naslov ikad</span></h1>
         <img src="images/slider-image-1024x250.png" class="slider">
         <img src="images/slider-image-1024x250.png" class="slider">
         <div class="previous" data-previous-cursor="images/left.png"></div>
@@ -53,7 +53,7 @@
         </div>
       </div>
 
-      <div class="articles">
+      <div id="articles" class="articles">
         <div class="article">
           <img src="images/content-image.png" alt="Article image">
           <h2>Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
@@ -72,6 +72,15 @@
             <span><a href="#">View full article</a></span>
           </div>
         </div>
+        <div class="article tablet">
+          <img src="images/content-image.png" alt="Article image">
+          <h2>Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
+          <p>Roboto Regular, 22px, Spacing 34px - Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <div class="view_full">
+            <span><a href="#">View full article</a></span>
+          </div>
+        </div>
         <div class="article">
           <img src="images/content-image.png" alt="Article image">
           <h2>Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
@@ -80,7 +89,9 @@
           <div class="view_full">
             <span><a href="#">View full article</a></span>
           </div>
-          <div class="load_more">
+        </div>
+        <div class="load_more_container">
+          <div id="load" class="load_more">
             <h5>Load more</h5>
           </div>
         </div>
@@ -107,14 +118,15 @@
 
     </main>
     <footer>
-      <p>2016 Locastic Teest Page</p>
-      <p>By Frontend Developer</p>
+      <p class="left">2016 Locastic Teest Page</p>
+      <p class="right">By Frontend Developer</p>
     </footer>
 
   </div>
 
   <script src="js/main.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/loadMore.js"></script>
 </body>
 
 </html>
