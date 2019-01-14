@@ -4,7 +4,6 @@ const hamburger = document.getElementById('hamburger');
 const locasticLogo = document.getElementById('logo');
 const dropDown = document.querySelector('.dropdown');
 
-
 document.addEventListener('DOMContentLoaded', ()=> {
   dropDown.style.display = 'none';
   closeIcon.style.display = 'none';

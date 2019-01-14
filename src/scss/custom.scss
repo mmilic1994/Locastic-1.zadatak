@@ -126,14 +126,16 @@ $desktop-breakpoint: 1024px;
   .articles {
    padding-bottom: 1rem;
 
-   .tablet {
+   .tablet_only {
     display: none;
   }
-  
+
+  .desktop_only {
+    display: none;
   }
 
-   
-  
+  }
+
   .article {
     width: 100%;
     padding: 1rem;
@@ -142,7 +144,6 @@ $desktop-breakpoint: 1024px;
     flex-flow: row wrap;
     justify-content: center;
     
-  
     img {
       height: 100%;
       width: 100%;
@@ -417,7 +418,6 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  
 
   img {
     height: 100%;
@@ -591,18 +591,22 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: 100%;
 
-  .tablet {
+  .tablet_only {
     display: flex;
   }
 
-  
+  .desktop_only {
+    display: none;
+  }
+
 }  
  .article {
-  width: calc(50% - 1rem);
+  width: 50%!important;
 
   img {
-    height: 230px;
+    height: 300px;
     width: 100%;
   }
 }
@@ -649,6 +653,73 @@ footer {
 
 }
 
+@media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+  .dropdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+
+    .desktop_only {
+    display: none;
+  }
+  
+}
+
+@media (min-width: $desktop-breakpoint) {
+
+  .articles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .article {
+      width: 33%;
+  
+      .tablet_only {
+        display: none;
+      }
+  
+      .desktop_only {
+        display: flex;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left {
+    width: 50%;
+    text-align: left;
+  }
+
+  .right {
+    width: 50%;
+    text-align: right;
+  }
+
+  .load_more_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+
+    .load_more {
+      width: 321px;
+    }
+  }
+  
+
+  
+}
 
 
 
