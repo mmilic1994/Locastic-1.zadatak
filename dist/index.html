@@ -15,19 +15,24 @@
     <header>
       <nav>
         <span id="logo" class="logo"><img src="../dist/images/locastic-logo-white.svg" alt=""></span>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Works</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+        <div class="navbar">
+          <div class="nav_item"><a href="#">Home</a></div>
+          <div class="nav_item works" id="works"><a href="#">Works</a></div>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Manistra na pome</a>
+            <a href="#">Biftek - Medium rare+</a>
+            <a href="#">Picigin 2016</a>
+            <a href="#">Jos jedan link eto tako</a>
+          </div>
+          <div class="nav_item"><a href="#">About Us</a></div>
+          <div class="nav_item"><a href="#contact">Contact</a></div>
+        </div>
         <span id="hamburger" class="hamburger"><img src="./images/hamburger-icon.svg" alt="hamburger"></span>
         <span id="close_Icon" class="close_icon"><img src="./images/close-icon.svg" alt="close-icon"></span>
       </nav>
       <div class="split">
         <div class="dropdown">
           <div class="navlist" id="navlist">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#" class="drop-item">Home</a>
             <a href="#" class="drop-item">Works</a>
             <a href="#" class="drop-item-small">Manistra na pome</a>
@@ -35,28 +40,27 @@
             <a href="#" class="drop-item-small">Picigin 2016</a>
             <a href="#" class="drop-item-small">Jos jedan link eto tako</a>
             <a href="#" class="drop-item">About us</a>
-            <a href="#" class="drop-item">Contact</a>
+            <a href="#contact" class="drop-item">Contact</a>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="split">
-        <div class="banner">
-          <img src="images/slider-image-1024x250.png" class="slider">
-          <h1>Moj najlišši <span class="title">naslov ikad</span></h1>
-          <img src="images/slider-image-1024x250.png" class="slider">
-          <img src="images/slider-image-1024x250.png" class="slider">
-          <div class="previous" data-previous-cursor="images/left.png"></div>
-          <div class="next" data-next-cursor="images/right.png"></div>
-          <div class="links">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a class="selected_dot" href="#"></a>
+      <div class="split">  
+          <div class="banner">
+            <img src="images/slider-image-1024x250.png" class="slider">
+            <h1>Moj najlišši <span class="title">naslov ikad</span></h1>
+            <img src="images/slider-image-1024x250.png" class="slider">
+            <img src="images/slider-image-1024x250.png" class="slider">
+            <div class="previous" data-previous-cursor="images/left.png"></div>
+            <div class="next" data-next-cursor="images/right.png"></div>
+            <div class="links">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a class="selected_dot" href="#"></a>
+            </div>
           </div>
-        </div>
-
         <div id="articles" class="articles">
           <div class="article">
             <img src="images/content-image.png" alt="Article image">
@@ -121,6 +125,7 @@
       </div>
       <div class="contact_form">
         <h2>Contact Form</h2>
+        <a name="contact"></a>
         <form action="" method="POST">
           <div class="contact_name">
             <p>Contact name:</p>

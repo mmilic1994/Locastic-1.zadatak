@@ -61,7 +61,7 @@ loadMore.addEventListener('click', () => {
     `;
     articlesNode.appendChild(articleNode);
 
-    if(window.screen.width > 1024){
+    if(window.screen.width >= 1024){
       articleNode.innerHTML = ` <div class="article">
       <img src="images/content-image.png" alt="Article image">
       <h2>Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
@@ -94,6 +94,7 @@ loadMore.addEventListener('click', () => {
     }
   }
 });
+
 
 
 

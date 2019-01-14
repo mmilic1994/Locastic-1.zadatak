@@ -3,6 +3,7 @@ const closeIcon = document.getElementById('close_Icon');
 const hamburger = document.getElementById('hamburger');
 const locasticLogo = document.getElementById('logo');
 const dropDown = document.querySelector('.dropdown');
+const dropDownDesktop = document.getElementById('works');
 
 document.addEventListener('DOMContentLoaded', ()=> {
   dropDown.style.display = 'none';
@@ -28,4 +29,11 @@ closeIcon.addEventListener('click', ()=> {
   locasticLogo.style.display = 'block';
   dropDown.style.display = 'none';
 })
+
+dropDownDesktop.addEventListener('click', ()=> {
+  document.getElementById("myDropdown").classList.toggle("show");
+}, false)
+
+
+
 
