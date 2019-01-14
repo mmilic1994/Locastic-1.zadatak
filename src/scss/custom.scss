@@ -669,7 +669,7 @@ footer {
     display: none;
   }
 
-   .drop-item {
+  .navlist .drop-item {
     padding: 0.4rem;
   }
 
@@ -851,10 +851,13 @@ footer {
   .contact_form input, .contact_form textarea {
     width: 493px;
   }
-
-  
 }
 
+@media (width: 1024px) {
+  .article img {
+    height: 100%;
+  }
+}
 
 
 

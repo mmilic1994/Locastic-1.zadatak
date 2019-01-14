@@ -60,6 +60,7 @@ loadMore.addEventListener('click', () => {
   </div>
     `;
     articlesNode.appendChild(articleNode);
+  }
 
     if(window.screen.width >= 1024){
       articleNode.innerHTML = ` <div class="article">
@@ -92,8 +93,7 @@ loadMore.addEventListener('click', () => {
       `;
       articlesNode.appendChild(articleNode);
     }
-  }
-});
+  });
 
 
 
