@@ -88,7 +88,7 @@
       display: none; }
   .article {
     width: 100%;
-    padding: 1rem;
+    padding: 10px;
     background-color: #ffffff;
     display: flex;
     flex-flow: row wrap;
@@ -99,16 +99,15 @@
       object-fit: contain;
       overflow: hidden; }
     .article h2 {
-      color: #333333;
+      color: #4a4a4a;
       font-weight: 700;
       font-size: 1.8rem;
-      margin-top: 0.4rem; }
+      margin-top: 10px; }
     .article p {
       font-weight: 400;
-      font-size: 1.2rem;
-      spacing: 34px;
-      color: #747474;
-      margin-top: 0.2rem; }
+      font-size: 22px;
+      line-height: 34px;
+      color: #747474; }
     .article .view_full {
       width: 100%;
       text-align: left; }
@@ -116,7 +115,7 @@
     color: #00A1D1;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.3rem; }
+    font-size: 22px; }
   .load_more {
     margin: 0.5rem;
     background-color: #b0b0b0;
@@ -146,7 +145,7 @@
     justify-content: center;
     padding: 1rem; }
     .contact_form h2 {
-      color: #333333;
+      color: #4a4a4a;
       width: 100%;
       text-align: center;
       font-size: 45px;
@@ -155,11 +154,11 @@
       font-weight: 900; }
     .contact_form .contact_name, .contact_form .email_address, .contact_form .message {
       font-size: 22px;
-      color: #333333;
+      color: #4a4a4a;
       letter-spacing: 0px;
       line-height: 36px;
       text-align: left;
-      width: 100%; }
+      width: 355px; }
     .contact_form input, .contact_form textarea {
       padding: 2rem;
       border-radius: 4px;
@@ -182,13 +181,14 @@
       font-size: 1.3rem;
       width: 100%;
       height: 80px;
-      margin-bottom: 1rem;
+      margin-bottom: 6px;
+      margin-top: 6px;
       cursor: pointer; }
     .contact_form button:hover {
       background-color: #b0b0b0;
       cursor: pointer; }
   footer {
-    background-color: #333333;
+    background-color: #4a4a4a;
     height: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -300,16 +300,15 @@ h1 {
     object-fit: contain;
     overflow: hidden; }
   .article h2 {
-    color: #333333;
+    color: #4a4a4a;
     font-weight: 700;
-    font-size: 1.8rem;
-    margin-top: 0.4rem; }
+    font-size: 1.8rem; }
   .article p {
     font-weight: 400;
-    font-size: 1.2rem;
-    spacing: 34px;
+    font-size: 22px;
     color: #747474;
-    margin-top: 0.2rem; }
+    margin-top: -9px;
+    margin-bottom: 9px; }
   .article .view_full {
     width: 100%;
     text-align: left; }
@@ -350,16 +349,15 @@ span a, span a:visited {
   justify-content: center;
   padding: 1rem; }
   .contact_form h2 {
-    color: #333333;
+    color: #4a4a4a;
     width: 100%;
     text-align: center;
-    font-size: 45px;
-    letter-spacing: 0px;
+    font-size: 50px;
     line-height: 36px;
     font-weight: 900; }
   .contact_form .contact_name, .contact_form .email_address, .contact_form .message {
     font-size: 22px;
-    color: #333333;
+    color: #4a4a4a;
     letter-spacing: 0px;
     line-height: 36px;
     text-align: left;
@@ -370,10 +368,11 @@ span a, span a:visited {
     line-height: 2.5rem;
     border: none;
     background: #ffffff;
-    width: 100%;
+    width: 354px;
     height: 80px;
     font-family: "Roboto", sans-serif;
-    font-size: 22px; }
+    font-size: 22px;
+    margin-top: 6px; }
   .contact_form textarea {
     height: 202px; }
   .contact_form button {
@@ -392,7 +391,7 @@ span a, span a:visited {
     cursor: pointer; }
 
 footer {
-  background-color: #333333;
+  background-color: #4a4a4a;
   height: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -442,7 +441,7 @@ footer {
   .load_more {
     width: 321px; }
   .load_more:hover {
-    background-color: #333333; }
+    background-color: #4a4a4a; }
   .contact_form input, .contact_form textarea {
     width: 493px; }
   footer {
@@ -456,13 +455,24 @@ footer {
     text-align: right; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .overlay .show {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer; }
   .navbar, .dropdown-content {
     display: none; }
   .navlist .drop-item {
     padding: 0.4rem; }
   .dropdown {
     width: 50%;
-    height: 900px;
     z-index: 3;
     position: absolute;
     right: 0;
@@ -550,7 +560,7 @@ footer {
     min-width: 254px;
     margin-top: 75px;
     z-index: 2;
-    background: #333333;
+    background: #4a4a4a;
     width: 254px;
     height: 179px;
     margin-left: -8rem; }

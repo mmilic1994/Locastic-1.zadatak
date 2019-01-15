@@ -1,6 +1,6 @@
 $font-stack: 'Roboto', sans-serif;
 $primary-color: #00A1D1;
-$secondary-color: #333333;
+$secondary-color: #4a4a4a;
 $tertiary-color: #747474;
 $mobile-breakpoint: 640px;
 $tablet-breakpoint: 768px;
@@ -49,7 +49,7 @@ $desktop-breakpoint: 1024px;
     .dropdown {
       height: calc(100vh - 75px);
       overflow: hidden; 
-      background-color: $secondary-color;
+      background-color: #333333;
       padding: 3rem;
       padding-bottom: 6rem;
       
@@ -144,7 +144,7 @@ $desktop-breakpoint: 1024px;
 
   .article {
     width: 100%;
-    padding: 1rem;
+    padding: 10px;
     background-color: #ffffff;
     display: flex;
     flex-flow: row wrap;
@@ -161,15 +161,15 @@ $desktop-breakpoint: 1024px;
       color: $secondary-color;
       font-weight: 700;
       font-size: 1.8rem;
-      margin-top: 0.4rem;
+      margin-top: 10px;
     }
   
     p {
       font-weight: 400;
-      font-size: 1.2rem;
-      spacing: 34px;
+      font-size: 22px;
+      line-height: 34px;
       color: $tertiary-color;
-      margin-top: 0.2rem;
+      
     }
   
     .view_full {
@@ -183,7 +183,7 @@ $desktop-breakpoint: 1024px;
     color: $primary-color;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 22px;
   }
   
   
@@ -238,12 +238,11 @@ $desktop-breakpoint: 1024px;
       letter-spacing:0px;
       line-height:36px;
       text-align:left;
-      width: 100%;
-  
+      width: 355px;
     }
   
     input, textarea {
-      padding: 2rem;
+      padding: 2rem;  
       border-radius: 4px;
       line-height: 2.5rem;
       border: none;
@@ -269,8 +268,10 @@ $desktop-breakpoint: 1024px;
       font-size: 1.3rem;
       width: 100%;
       height: 80px;
-      margin-bottom: 1rem;
+      margin-bottom: 6px;
+      margin-top: 6px;
       cursor: pointer;
+
     }
   
     button:hover {
@@ -334,7 +335,7 @@ nav {
   .dropdown {
     height: calc(100vh - 75px);
     overflow: hidden; 
-    background-color: $secondary-color;
+    background-color: #333333;
     padding: 3rem;
     padding-bottom: 6rem;
     
@@ -436,15 +437,14 @@ h1 {
     color: $secondary-color;
     font-weight: 700;
     font-size: 1.8rem;
-    margin-top: 0.4rem;
   }
 
   p {
     font-weight: 400;
-    font-size: 1.2rem;
-    spacing: 34px;
+    font-size: 22px;
     color: $tertiary-color;
-    margin-top: 0.2rem;
+    margin-top: -9px;
+    margin-bottom: 9px;
   }
 
   .view_full {
@@ -502,8 +502,7 @@ text-align:right;
     color: $secondary-color;
     width: 100%;
     text-align: center;
-    font-size: 45px;
-    letter-spacing: 0px;
+    font-size: 50px;
     line-height: 36px;
     font-weight: 900;
     
@@ -524,10 +523,11 @@ text-align:right;
     line-height: 2.5rem;
     border: none;
     background:#ffffff;
-    width: 100%;
+    width: 354px;
     height:80px;
     font-family: $font-stack;
     font-size: 22px;
+    margin-top: 6px;
   }
 
   textarea {
@@ -665,6 +665,19 @@ footer {
 
 @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
   
+   .overlay .show {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+  }
   .navbar, .dropdown-content {
     display: none;
   }
@@ -675,7 +688,6 @@ footer {
 
   .dropdown {
     width: 50%;
-    height: 900px;
     z-index: 3;
     position: absolute;
     right: 0;
