@@ -36,7 +36,7 @@ dropDownDesktop.addEventListener('click', ()=> {
 
 if(window.screen.width >= 768 && window.screen.width < 1024){
   hamburger.addEventListener('click', ()=> {
-    document.querySelector('.overlay').classList.toggle("show");
+    document.querySelector('.overlay').classList.toggle("trigger");
   }, false)
 }
 
