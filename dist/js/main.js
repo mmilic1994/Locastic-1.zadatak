@@ -4,6 +4,7 @@ const hamburger = document.getElementById('hamburger');
 const locasticLogo = document.getElementById('logo');
 const dropDown = document.querySelector('.dropdown');
 const dropDownDesktop = document.getElementById('works');
+const overlay = document.querySelector('.overlay');
 
 document.addEventListener('DOMContentLoaded', ()=> {
   dropDown.style.display = 'none';
@@ -36,8 +37,9 @@ dropDownDesktop.addEventListener('click', ()=> {
 
 if(window.screen.width >= 768 && window.screen.width < 1024){
   hamburger.addEventListener('click', ()=> {
-    document.querySelector('.overlay').classList.toggle("trigger");
+    document.getElementById("overlay").classList.toggle('overlay');;
   }, false)
+  closeIcon.addEventListener('click', ()=> {
+    document.getElementById("overlay").classList.toggle('overlay');;
+  }, false) 
 }
-
-
